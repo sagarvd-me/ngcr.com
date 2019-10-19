@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us | Nexgen Car Rental</title>
+        <meta name="description" content="Want to be a part of this growing network? Contact us now.">
+        <meta property="og:url" content="https://ngcr.com/contact.html">
+        <meta property="og:title" content="Contact Us | Nexgen Car Rental">
+        <meta property="og:description" content="Want to be a part of this growing network? Contact us now.">
+        <meta property="og:image" content="https://ngcr.com/assets/images/1.jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="section-about">
+            <img src="assets/images/contact.jpg" class="image-about">
+            <div class="overlay overlay-about"></div>
+            <div class="title-container no-title">
+                <h1 class="title">CONTACT US</h1>
+            </div>    
+        </div>
+        <div class="container">
+            <div class="row mb-5 mt-5">
+                <div class="col-lg-5 col-md-5 justify-content-center contact-form">
+                    <div class="success"><h3>Thank you for contacting us<br>We will get back to you soon.</h3></div>
+                    <form class="form" onsubmit="sendEnquiry(event,this)">
+                        <div class="container pt-3 pb-2">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent" id="basic-addon1">Name : </span>
+                                </div>
+                                <input type="text" id="name" class="form-control bg-transparent" placeholder="Enter Your Name..." aria-label="Name" aria-describedby="basic-addon1" required>
+                            </div>
+                        </div>
+                        <div class="container pt-3 pb-2">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent" id="basic-addon1">Email : </span>
+                                </div>
+                                <input type="email" id="email" class="form-control bg-transparent" placeholder="Enter Your Email" aria-label="Email" aria-describedby="basic-addon1" required>
+                            </div>
+                        </div>
+                        <div class="container pt-3 pb-2">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent" id="basic-addon1"> Mobile: </span>
+                                </div>
+                                <input type="text" id="mobile" class="form-control bg-transparent" placeholder="Enter your Mobile Number" aria-label="Mobile" aria-describedby="basic-addon1" required>
+                            </div>
+                        </div>
+                        <div class="container pt-3 pb-2">
+                            <textarea id="message" class="form-control bg-transparent" placeholder="Enter your message..." required maxlength="150"></textarea>
+                        </div>
+                        <div class="container pt-3">
+                            <button type="submit" class="btn btn-primary form-control">Send&ensp;<fa-icon [icon]="faPaperPlane"></fa-icon></button>
+                        </div>
+                    </form>
+                    <div class="contact-form-loader">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 seperator-column">
+                    <div class="container"><div class="or-seperator"></div></div>
+                </div>
+                <div class="col-lg-5 col-md-5 justify-content-center">
+                    <div class="container">
+                        <p class="lead contact-data"><a href="tel:+13065811176"><ion-icon name="call"></ion-icon>&ensp;(+1) 306 581 1176</a></p>
+        
+                    </div>
+                    <div class="container">
+                            <p class="lead contact-data"><a href="mailto:hello@ngcr.com"><ion-icon name="mail"></ion-icon>&ensp;hello@ngcr.com</a></p>
+                    </div>
+                    <div class="container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5006.357857740201!2d-114.03423886847163!3d51.142051460489434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537166a08b2ab635%3A0xd9670c9cf34a2ed2!2s57%20Freeport%20Cres%20NE%2C%20Calgary%2C%20AB%20T3J%203P9%2C%20Canada!5e0!3m2!1sen!2sin!4v1569174931473!5m2!1sen!2sin" width="100%" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <footer class="footer">
+            <div>NexGen Car Rental&copy; 2019 </div><br>
+            <div>Site Developed By</div>&ensp;
+            <a href="https://www.sagarvd.me" class="developer-name">Sagar V</a>
+        </footer>
+        <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyAO6kBwYqa_cibXjni5oSQD2z7Ck_lCweA",
+                authDomain: "ngcr-com.firebaseapp.com",
+                databaseURL: "https://ngcr-com.firebaseio.com",
+                projectId: "ngcr-com",
+                storageBucket: "",
+                messagingSenderId: "682843172556",
+                appId: "1:682843172556:web:294a853b97b1a83b"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="./assets/js/script.js"></script>
